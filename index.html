@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">       
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./img/graduation.png" alt="">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form id="form-atividade">
+            <input id="nome-atividade" type="text" id="atividade" placeholder="Nome da Atividade" required>
+            <input id="nota-atividade" type="number" id="nota" placeholder="Nota" required max="10" min="0" step=".1">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da Atividade</th>
+                    <th>Nota</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>Atividade A</td>
+                    <td>7</td> 
+                    <td><img src="./img/aprovado.png" alt=""></td>            
+                </tr> 
+
+                ISSO É UM CONTEUDO ESTÁTICO;
+                APOS INCLUIR NO JS PODEMOS EXCLUIR O TR POIS JÁ FOI INCLUIDO E TEMOS O ESTIMULO DO USUARIO; 
+                
+                -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média Final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado"><span class="resultado">---</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+    
+</html>
